@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Codificador de Texto</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <div class="encriptador">
+            <div>
+                <image class="logo" src="/img/logoMrX.jpeg"></image>
+                <h1 class="titulo">Encriptador de texto</h1>
+            </div>
+            <textarea name="texto" id="txtEncriptar" cols="40" rows="5" placeholder="Ingrese el texto aquí" onClick="this.select();" onkeypress="checkEntrada(event)" required 
+            size="32"></textarea>            
+            <image class="ayuda" src="/img/Frame 1.png"></image>
+            <div class="botones">
+                <button id="btnEncriptar" name="encriptar">Encriptar</button>
+                <button id="btnDesencriptar" name="desencriptar">Desencriptar</button>
+            </div>  
+            <div id="rectangulo" class="rectangulo">
+                <image class="imgMunieco" src="/img/Muñeco.png" visible="true">
+                <p class="p1">Ningun mensaje fue encontrado</p>
+                <p class="p2">Ingrese el texto que desees encriptar o desencriptar</p>                
+            </div> 
+            <div id="rectanguloEncriptado" class="rectanguloEncriptado" hidden>
+                <textarea name="textoEncriptado" id="textoEncriptado" cols="10" rows="5" size="32"></textarea>
+                <button class="botonCopiar">Copiar</button>
+            </div>
+        </div>
+
+        <footer id="pieDePagina">        
+            <p class="nombre">
+                <span>Challenge Nº1 - Oracle One - © Gabriel Villarreal 2022 </span> 
+            </p>
+            <a class="redes" href="https://www.linkedin.com/in/villarreal-gabriel/" target="blank"><i class="fab fa-linkedin"></i></a>
+            <a class="redes" href="https://github.com/gabrielvillarreal/" target="blank"><i class="fab fa-github"></i></a>
+        </footer>
+
+    </body>
+ <script src="/javascript/copiarTxt.js"></script>
+ <script src="/javascript/encriptarTxt.js"></script>
+ <script src="/javascript/desencriptarTxt.js"></script>
+</html>
